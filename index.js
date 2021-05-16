@@ -1,3 +1,5 @@
+const restrictedGlobals = require('confusing-browser-globals');
+
 module.exports = {
   root: true,
   env: {
@@ -28,7 +30,7 @@ module.exports = {
     linkComponents: ['Hyperlink', {name: 'Link', linkAttribute: 'to'}],
     'import/resolver': {
       node: {
-        extensions: ['.js', '.jsx', '.ts', '.tsx'],
+        extensions: ['.js', '.jsx'],
         moduleDirectory: ['node_modules', 'src/', 'node_modules/@types']
       }
     }
@@ -46,7 +48,8 @@ module.exports = {
     'no-console': 'off',
     quotes: ['error', 'single'],
     'linebreak-style': ['error', 'unix'],
-    'comma-dangle': ['error', 'never']
+    'comma-dangle': ['error', 'never'],
+    'no-restricted-globals': ['error'].concat(restrictedGlobals)
   },
   overrides: [
     {

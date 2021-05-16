@@ -1,8 +1,9 @@
 import React, {Component} from 'react';
+import App from './App';
 
 class Main extends Component {
-  render(): JSX.Element {
-    return <div>test</div>;
+  render() {
+    return <App />;
   }
 }
 
