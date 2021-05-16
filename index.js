@@ -1,5 +1,3 @@
-const extensions = ['.js', '.jsx'];
-
 module.exports = {
   root: true,
   env: {
@@ -31,9 +29,9 @@ module.exports = {
     'import/resolver': {
       node: {
         extensions: ['.js', '.jsx', '.ts', '.tsx'],
-        moduleDirectory: ['node_modules', 'src/', 'node_modules/@types'],
-      },
-    },
+        moduleDirectory: ['node_modules', 'src/', 'node_modules/@types']
+      }
+    }
   },
   extends: [
     'eslint:recommended',
