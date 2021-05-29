@@ -1,6 +1,6 @@
 {
   "name": "@ria-develop/eslint-config",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "main": "index.js",
   "private": false,
   "license": "MIT",
@@ -51,8 +51,6 @@
       "./index.js"
     ]
   },
-  "babel": {
-
-  },
+  "babel": {},
   "gitHead": "5aad4a21fdeaa16be5d6402836403dbb889f29b4"
 }
